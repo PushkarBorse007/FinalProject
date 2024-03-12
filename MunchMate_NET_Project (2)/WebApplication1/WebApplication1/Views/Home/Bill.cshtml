@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Billing Management";
+}
+
+<h2 style="text-align: center;">Billing Management</h2>
+
+<div class="card d-flex justify-content-center" style="width: 18rem; margin: 10px;">
+    <img src="https://www.blinkco.io/wp-content/uploads/2021/08/food-deliver-yapp-interface-mobile.jpg" class="card-img-top" alt="Billing Management" width="300" height="200">
+    <div class="card-body">
+        <h5 class="card-title">Billing Management</h5>
+        <p class="card-text"><b>Billing management involves overseeing the entire process of invoicing and payment within a business.</b></p>
+        <p><b>Key Features:</b></p>
+        <ul>
+            <li>Automated Invoicing</li>
+            <li>Payment Processing</li>
+            <li>Financial Reporting</li>
+            <li>Customer Billing</li>
+        </ul>
+        <p><b>Benefits:</b></p>
+        <ul>
+            <li>Improved Cash Flow</li>
+            <li>Efficient Billing Processes</li>
+            <li>Accurate Financial Tracking</li>
+            <li>Enhanced Customer Satisfaction</li>
+        </ul>
+
+    </div>
+</div>
+
+<!-- Payment Section -->
+<h5 class="card-title">Payment</h5>
+<form action="/payment/process" method="post">
+    <div class="form-group">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="expDate">Expiration Date:</label>
+        <input type="text" id="expDate" name="expDate" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Pay Now</button>
+</form>
+    </div>
+</div>

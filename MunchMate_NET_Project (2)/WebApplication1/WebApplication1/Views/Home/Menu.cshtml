@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Menu Engineering";
+}
+
+<h2 style="text-align: center;">Menu Engineering</h2>
+
+<div class="card d-flex justify-content-center" style="width: 18rem; margin: 10px; background-color: black; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
+    <img src="https://craftable.com/wp-content/uploads/2022/08/Menu-Engineering-101.jpg" class="card-img-top" alt="Menu Engineering" style="border-radius: 10px;">
+    <div class="card-body">
+        <h5 class="card-title">Menu Engineering</h5>
+        <p class="card-text"><b>Our menu engineering services are designed to optimize your menu for profitability and customer satisfaction.</b></p>
+        <p><b>Key Features:</b></p>
+        <ul>
+            <li>Menu Analysis and Optimization</li>
+            <li>Price Structuring and Strategy</li>
+            <li>Item Placement and Highlighting</li>
+            <li>Seasonal and Trend Integration</li>
+        </ul>
+        <p><b>Benefits:</b></p>
+        <ul>
+            <li>Increased Profit Margins</li>
+            <li>Enhanced Customer Experience</li>
+            <li>Improved Operational Efficiency</li>
+            <li>Menu Adaptability and Flexibility</li>
+        </ul>
+        <p><b>Our expert team will work closely with you to understand your business goals and target audience, ensuring that your menu reflects your brand identity and maximizes revenue. Contact us today to learn more!</b></p>
+    </div>
+</div>
+
+<!-- Payment Section -->
+<h5 class="card-title">Payment</h5>
+<form action="/payment/process" method="post">
+    <div class="form-group">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="expDate">Expiration Date:</label>
+        <input type="text" id="expDate" name="expDate" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Pay Now</button>
+</form>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Employee Management";
+}
+
+<h2 style="text-align: center;">Employee Management</h2>
+
+<div class="card d-flex justify-content-center" style="width: 18rem; margin: 10px; background-color: black; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
+    <img src="https://www.restaurant365.com/wp-content/uploads/2022/10/iStock-519196606-1.jpg" class="card-img-top" alt="Employee Management" style="border-radius: 10px;">
+    <div class="card-body">
+        <h5 class="card-title">Employee Management</h5>
+        <p class="card-text"><b>Our employee management services are designed to streamline HR processes and optimize workforce efficiency.</b></p>
+        <p><b>Key Features:</b></p>
+        <ul>
+            <li>Employee Database Management</li>
+            <li>Attendance Tracking</li>
+            <li>Performance Evaluation Tools</li>
+            <li>Training and Development Programs</li>
+            <li>HR Compliance Management</li>
+        </ul>
+        <p><b>Benefits:</b></p>
+        <ul>
+            <li>Improved Workforce Productivity</li>
+            <li>Enhanced Employee Engagement</li>
+            <li>Cost Savings Through Efficiency</li>
+            <li>Reduced HR Administrative Burden</li>
+            <li>Compliance with Employment Laws</li>
+        </ul>
+        <p><b>Industries Served:</b></p>
+        <ul>
+            <li>Manufacturing</li>
+            <li>Retail</li>
+            <li>Healthcare</li>
+            <li>Information Technology</li>
+            <li>Education</li>
+        </ul>
+        <p><b>Our employee management solutions are customizable to meet the unique needs of your organization. Contact us today to learn more!</b></p>
+    </div>
+</div>
+
+<!-- Payment Section -->
+<h5 class="card-title">Payment</h5>
+<form action="/payment/process" method="post">
+    <div class="form-group">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="expDate">Expiration Date:</label>
+        <input type="text" id="expDate" name="expDate" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Pay Now</button>
+</form>
+    </div>
+</div>

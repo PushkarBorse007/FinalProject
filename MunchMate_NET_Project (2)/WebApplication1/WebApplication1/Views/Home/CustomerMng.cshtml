@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Customer Management";
+}
+
+<h2 style="text-align: center;">Customer Management</h2>
+
+<div class="card d-flex justify-content-center" style="width: 18rem; margin: 10px; background-color: Black; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
+    <img src="https://www.posist.com/restaurant-times/wp-content/uploads/2017/11/Effective-Strategies-To-Improve-Your-Restaurant-Service-And-Provide-A-Stellar-Guest-Experience.jpg" class="card-img-top" alt="Customer Management" style="border-radius: 10px;">
+    <div class="card-body">
+        <h5 class="card-title">Customer Management</h5>
+        <p class="card-text"><b>Our customer management services are designed to help businesses build and maintain strong relationships with their customers.</b></p>
+        <p><b>Key Features:</b></p>
+        <ul>
+            <li>Customer Database Management</li>
+            <li>Customer Communication Tools</li>
+            <li>Feedback and Review Management</li>
+            <li>Customer Loyalty Programs</li>
+            <li>Personalized Customer Experiences</li>
+        </ul>
+        <p><b>Benefits:</b></p>
+        <ul>
+            <li>Improved Customer Retention</li>
+            <li>Enhanced Customer Satisfaction</li>
+            <li>Increased Customer Lifetime Value</li>
+            <li>Efficient Customer Support</li>
+            <li>Insightful Customer Analytics</li>
+        </ul>
+        <p><b>Industries Served:</b></p>
+        <ul>
+            <li>Retail</li>
+            <li>Hospitality</li>
+            <li>Healthcare</li>
+            <li>Financial Services</li>
+            <li>Technology</li>
+        </ul>
+        <p><b>Our customer management solutions are customizable to meet the unique needs of your business. Contact us today to learn more!</b></p>
+    </div>
+</div>
+
+<!-- Payment Section -->
+<h5 class="card-title">Payment</h5>
+<form action="/payment/process" method="post">
+    <div class="form-group">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="expDate">Expiration Date:</label>
+        <input type="text" id="expDate" name="expDate" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Pay Now</button>
+</form>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Event Management";
+}
+
+<h2 style="text-align: center;">Event Management</h2>
+
+<div class="card d-flex justify-content-center" style="width: 18rem; margin: 10px; background-color: black; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
+    <img src="https://balchao.co.uk/wp-content/uploads/2023/03/Party-Booking-2-1024x682.jpg" class="card-img-top" alt="Event Management" style="border-radius: 10px;">
+    <div class="card-body">
+        <h5 class="card-title">Event Management</h5>
+        <p class="card-text"><b>Our event management services are designed to create memorable and impactful experiences for your attendees.</b></p>
+        <p><b>Key Features:</b></p>
+        <ul>
+            <li>Event Planning and Coordination</li>
+            <li>Venue Selection and Setup</li>
+            <li>Logistics and On-site Management</li>
+            <li>Entertainment and Guest Speakers</li>
+            <li>Post-Event Evaluation</li>
+        </ul>
+        <p><b>Types of Events:</b></p>
+        <ul>
+            <li>Conferences and Trade Shows</li>
+            <li>Corporate Meetings and Retreats</li>
+            <li>Product Launches</li>
+            <li>Weddings and Celebrations</li>
+            <li>Charity and Fundraising Events</li>
+        </ul>
+        <p><b>Benefits:</b></p>
+        <ul>
+            <li>Professional Event Execution</li>
+            <li>Cost Savings Through Vendor Management</li>
+            <li>Enhanced Attendee Experience</li>
+            <li>Customized Event Solutions</li>
+            <li>Measurable ROI</li>
+        </ul>
+        <p><b>Let us help you plan and execute your next event seamlessly. Contact us today to discuss your event management needs!</b></p>
+    </div>
+</div>
+
+<!-- Payment Section -->
+<h5 class="card-title">Payment</h5>
+<form action="/payment/process" method="post">
+    <div class="form-group">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="expDate">Expiration Date:</label>
+        <input type="text" id="expDate" name="expDate" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Pay Now</button>
+</form>
+    </div>
+</div>

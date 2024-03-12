@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Catering Services";
+}
+
+<h2 style="text-align: center;">Catering Services</h2>
+
+<div class="card d-flex justify-content-center" style="width: 18rem; margin: 10px; background-color: black; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
+    <img src="https://readytrainingonline.com/wp-content/uploads/2019/05/HR-Restaurant-Manager-Workshop.jpg" class="card-img-top" alt="Catering Services" style="border-radius: 10px;">
+    <div class="card-body">
+        <h5 class="card-title">Catering Services</h5>
+        <p class="card-text"><b>Our catering services are designed to elevate your events with exceptional culinary experiences.</b></p>
+        <p><b>Key Features:</b></p>
+        <ul>
+            <li>Custom Menu Creation</li>
+            <li>Professional Chef Services</li>
+            <li>Event Setup and Cleanup</li>
+            <li>Flexible Catering Packages</li>
+            <li>Specialty Beverage Services</li>
+        </ul>
+        <p><b>Benefits:</b></p>
+        <ul>
+            <li>Memorable Dining Experiences</li>
+            <li>Stress-Free Event Planning</li>
+            <li>Personalized Service</li>
+            <li>Attention to Dietary Restrictions</li>
+            <li>On-Time Delivery</li>
+        </ul>
+        <p><b>Event Types:</b></p>
+        <ul>
+            <li>Weddings</li>
+            <li>Corporate Events</li>
+            <li>Private Parties</li>
+            <li>Special Occasions</li>
+            <li>Outdoor Events</li>
+        </ul>
+        <p><b>Get in touch to discuss your catering needs and create a memorable event!</b></p>
+    </div>
+</div>
+
+<!-- Payment Section -->
+<h5 class="card-title">Payment</h5>
+<form action="/payment/process" method="post">
+    <div class="form-group">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="expDate">Expiration Date:</label>
+        <input type="text" id="expDate" name="expDate" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Pay Now</button>
+</form>
+    </div>
+</div>

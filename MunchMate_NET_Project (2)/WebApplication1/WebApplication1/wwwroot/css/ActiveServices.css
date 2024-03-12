@@ -1,0 +1,99 @@
+﻿body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+    .section-products .header {
+        margin-bottom: 50px;
+    }
+
+        .section-products .header h3 {
+            font-size: 1rem;
+            color: #fe302f;
+            font-weight: 500;
+        }
+
+        .section-products .header h2 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: white;
+            text-decoration: underline;
+        }
+
+    .section-products .single-product {
+        margin-bottom: 26px;
+    }
+
+        .section-products .single-product .part-1 {
+            position: relative;
+            height: 290px;
+            max-height: 290px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+            .section-products .single-product .part-1::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                transition: all 0.3s;
+            }
+
+    /* .section-products .single-product:hover .part-1::before {
+  transform: scale(1.2, 1.2) rotate(5deg);
+} */
+
+    .section-products #product-1 .part-1::before {
+        background: url("https://www.blinkco.io/wp-content/uploads/2021/08/food-deliver-yapp-interface-mobile.jpg") no-repeat center;
+        background-size: cover;
+        transition: all 0.3s;
+    }
+
+    .section-products #product-2 .part-1::before {
+        background: url("https://www.restaurant365.com/wp-content/uploads/2022/10/iStock-519196606-1.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .section-products #product-3 .part-1::before {
+        background: url("https://craftable.com/wp-content/uploads/2022/08/Menu-Engineering-101.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .section-products #product-4 .part-1::before {
+        background: url("https://readytrainingonline.com/wp-content/uploads/2019/05/HR-Restaurant-Manager-Workshop.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .section-products #product-5 .part-1::before {
+        background: url("https://balchao.co.uk/wp-content/uploads/2023/03/Party-Booking-2-1024x682.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .section-products #product-6 .part-1::before {
+        background: url("https://www.posist.com/restaurant-times/wp-content/uploads/2017/11/Effective-Strategies-To-Improve-Your-Restaurant-Service-And-Provide-A-Stellar-Guest-Experience.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .section-products #product-7 .part-1::before {
+        background: url("https://futurarestaurantmarketing.com/wp-content/uploads/2019/03/Restaurant-Consultant-768x438.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .section-products #product-8 .part-1::before {
+        background: url("https://5.imimg.com/data5/FN/GU/WS/SELLER-35678453/legal-compliance-management-software.PNG") no-repeat center;
+        background-size: cover;
+    }

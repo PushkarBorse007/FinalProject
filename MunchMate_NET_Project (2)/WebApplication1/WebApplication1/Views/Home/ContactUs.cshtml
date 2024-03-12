@@ -1,0 +1,110 @@
+﻿@*@{
+    ViewData["Title"] = "Contact Us";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div style="margin-top: 20px;">
+    @* <h2 style="text-align: center; color: white;">Contact Us</h2> 
+    <div class="row">
+        <div class="col">
+            <div style="width: 500px; height: 620px; padding: 20px; position: relative; top: 0; left: 0; right: 0; bottom: 0; margin: auto; margin-top: 20px; border-color: navy; border-radius: 10px; border-width: 1px; border-style: solid; box-shadow: 1px 1px 20px 5px #C9C9C9;">
+                <div class="mb-3">
+                    <label>First Name</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="mb-3">
+                    <label>Last Name</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="mb-3">
+                    <label>Email</label>
+                    <input class="form-control" type="email"  />
+                </div>
+                <div class="mb-3">
+                    <label>Title</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="mb-3">
+                    <label>Message</label>
+                    <textarea rows="6" style="resize: none;" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <p>
+                <p style="margin-top: 30px; font-weight: 700; font-family: sans-serif; font-size: 30px; font-style: italic; color: skyblue;">How can we Help?</p>
+                <p>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/007/067/602/small/businessman-shows-outstretched-hand-with-social-icon-on-virtual-screen-contact-us-free-photo.jpg" alt="contact image" class="rounded mx-auto d-block" style="left: 0; height: 300px; width: 550px; display: block;" />
+                </p>
+                <p style="margin-top: 15px; font-size: 20px; font-family: sans-serif; font-style: inherit; color: White; font-weight: 600;">
+                <p>Email : MunchMate2024@gmail.com</p>
+                <p>Address: Mumbai, Maharashtra</p>
+                <p>Phone : 02164 228 800</p>
+                </p>
+                <header />
+                    @* Assuming SocialFollow is a partial view *@
+                    @* @Html.Partial("_SocialFollow") 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div style="margin-top: 20px;">
+    <div class="row">
+        <div class="col">
+            <form method="post" action="ThankYou.cshtml">
+                <div style="width: 500px; height: 620px; padding: 20px; position: relative; top: 0; left: 0; right: 0; bottom: 0; margin: auto; margin-top: 20px; border-color: navy; border-radius: 10px; border-width: 1px; border-style: solid; box-shadow: 1px 1px 20px 5px #C9C9C9;">
+                    <div class="mb-3">
+                        <label>First Name</label>
+                        <input class="form-control" type="text" name="firstName" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Last Name</label>
+                        <input class="form-control" type="text" name="lastName" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Email</label>
+                        <input class="form-control" type="email" name="email" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Title</label>
+                        <input class="form-control" type="text" name="title" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Message</label>
+                        <textarea rows="6" style="resize: none;" class="form-control" name="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-primary" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <div>
+                <p style="margin-top: 30px; font-weight: 700; font-family: sans-serif; font-size: 30px; font-style: italic; color: skyblue;">How can we Help?</p>
+                <p>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/007/067/602/small/businessman-shows-outstretched-hand-with-social-icon-on-virtual-screen-contact-us-free-photo.jpg" alt="contact image" class="rounded mx-auto d-block" style="left: 0; height: 300px; width: 550px; display: block;" />
+                </p>
+                <p style="margin-top: 15px; font-size: 20px; font-family: sans-serif; font-style: inherit; color: White; font-weight: 600;">
+                <p>Email : MunchMate2024@gmail.com</p>
+                <p>Address: Mumbai, Maharashtra</p>
+                <p>Phone : 02164 228 800</p>
+                </p>
+                <header />
+            </div>
+        </div>
+    </div>
+</div>
+

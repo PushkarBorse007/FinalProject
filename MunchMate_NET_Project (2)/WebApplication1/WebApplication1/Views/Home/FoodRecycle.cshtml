@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Food Recycling Service";
+}
+
+<h2 style="text-align: center;">Food Recycling Service</h2>
+
+<div class="card d-flex justify-content-center" style="width: 18rem; margin: 10px; background-color: black; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
+    <img src="https://www.countrystylerecycling.co.uk/wp-content/uploads/2018/01/spits-1.png" class="card-img-top" alt="Food Recycling Service" style="border-radius: 10px;">
+    <div class="card-body">
+        <h5 class="card-title">Food Recycling Service</h5>
+        <p class="card-text"><b>Our food recycling service is a sustainable solution to reduce food waste and promote environmental conservation.</b></p>
+        <p><b>Key Features:</b></p>
+        <ul>
+            <li>Collection of Food Waste</li>
+            <li>Sorting and Processing</li>
+            <li>Conversion into Compost or Bioenergy</li>
+            <li>Environmentally-Friendly Disposal</li>
+        </ul>
+        <p><b>Benefits:</b></p>
+        <ul>
+            <li>Reduces Landfill Waste</li>
+            <li>Minimizes Greenhouse Gas Emissions</li>
+            <li>Promotes Circular Economy</li>
+            <li>Supports Sustainable Agriculture</li>
+            <li>Enhances Corporate Social Responsibility</li>
+        </ul>
+        <p><b>Our food recycling service is designed to help restaurants, hotels, and other food establishments minimize their environmental impact and contribute to a greener future. Contact us today to learn more!</b></p>
+    </div>
+</div>
+
+<!-- Payment Section -->
+<h5 class="card-title">Payment</h5>
+<form action="/payment/process" method="post">
+    <div class="form-group">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="expDate">Expiration Date:</label>
+        <input type="text" id="expDate" name="expDate" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Pay Now</button>
+</form>
+    </div>
+</div>
